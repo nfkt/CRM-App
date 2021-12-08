@@ -1,0 +1,25 @@
+.courseAddBox{
+    display: flex;
+
+
+}
+
+.formCheckBox{
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.add-courses{
+  
+    
+        margin-top: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+}
+
+.required{
+    color: red;
+}
+.right{
+    float:right;
+}
