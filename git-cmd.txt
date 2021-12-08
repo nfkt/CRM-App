@@ -1,0 +1,25 @@
+git user name email change
+git config --global user.name "name"
+git config --global user.email "email"
+
+
+git push
+git init or git clone http...
+git add .
+git commit -m "THe meassge"
+(git pull origin main)
+git push origin main(or other branch name)
+
+
+
+shift branches
+git checkout Backend
+
+git pull origin Backend
+
+git add .
+
+git commit -m 'Course Course-Enquiry 2'
+
+git push origin Backend
+
