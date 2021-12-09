@@ -1,4 +1,4 @@
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -35,7 +35,7 @@ function ViewCourseEnquiry() {
 
   return (
     <>
-      <ManagerDashboard />
+      <Dashboard />
       <div className="mainBody">
         <h4>Course enquiries List</h4>
         <Table striped bordered hover>

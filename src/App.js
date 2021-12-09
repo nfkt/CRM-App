@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import React from "react";
 import UserContextProvider from "./context/provider/user-context-provider";
-import Footer from "./Footer/Footer";
+import Footer from "./Components/Footer/Footer";
 import Routers from "./Routers/Routers";
 
 export default function App() {

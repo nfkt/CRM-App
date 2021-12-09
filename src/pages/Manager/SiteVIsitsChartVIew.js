@@ -1,15 +1,9 @@
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 import Chart from "./Chart/DonoughtChart";
 import PieChart from "./Chart/PieChart";
 import { Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-// import BarChart from "./Chart/BarChart";
-// import BarChartScreen from "./Chart/Temporary/BarChartApi";
-// import LineChartScreen from "./Chart/Temporary/LineChartApi";
-// import PieChartScreen from "./Chart/Temporary/PieChartApi";
-// import DonChart from "./Chart/Temporary/GraphChart";
-// import LineChart from "./Chart/BlueLineChart";
-// import Dankmemes from "./Chart/Temporary/CourseChartAPi";
+
 
 function SitesVisitsChartView() {
 
@@ -20,7 +14,7 @@ function SitesVisitsChartView() {
   return (
     <div>
       <div>
-        <ManagerDashboard />
+        <Dashboard />
       </div>
       <div className="container-fluid">
         {/* <h3 className={styles.headerText}>Dashboard</h3> */}

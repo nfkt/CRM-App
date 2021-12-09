@@ -1,4 +1,5 @@
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
+
 
 
 
@@ -6,7 +7,7 @@ import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard
 function SalesPipeline() {
   return (
     <div>
-       <ManagerDashboard />
+       <Dashboard />
       <p>This is page for View Sales Pipeline</p>
     </div>
   );

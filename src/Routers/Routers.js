@@ -5,8 +5,8 @@ import Manager from "../pages/Manager/Manager";
 import UserPage from "../pages/User/UserPage";
 import Admin from "../pages/Admin";
 import Home from "../pages/Home/Home";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
+import Header from "../Components/Header/Header";
+import Footer from "../Components/Footer/Footer";
 
 //Access Denied page
 import AdminError from "../pages/AuthError/AdminError";
@@ -66,7 +66,7 @@ import UserCourseEnquiryForm from "../pages/User/UserCourseEnquiryForm";
 import UserResourceEnquiryForm from "../pages/User/UserResourceEnquiryForm";
 import UserContext from "../context/user-context";
 
-const Routers = (props) => {
+const Routers = () => {
   const userContext = useContext(UserContext);
   return (
     <Router>
@@ -225,7 +225,7 @@ const Routers = (props) => {
         <Route path="/manager/view-table" element={userContext.userDetails && userContext.userDetails.role === 'Manager' && <SitesVisitsTableView />} />
       </Routes>
       <br />
-      {/* <Footer /> */}
+      
     </Router>
   );
 }

@@ -1,12 +1,10 @@
-
 import { Container } from "react-bootstrap";
-
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 
 function Manager() {
   return (
     <div>
-      <ManagerDashboard />
+      <Dashboard />
       <div style={{ marginTop: "20px", height: "50vh" }}>
 
         <Container >

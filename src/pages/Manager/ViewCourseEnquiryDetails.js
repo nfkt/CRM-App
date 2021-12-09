@@ -1,5 +1,4 @@
-// import Dashboard from "../../Components/Dashboard/Dashboard";
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 
 import axios from "axios";
 import { useState, useEffect } from "react";
@@ -34,7 +33,7 @@ function ManagerViewCourseEnquiryDetails() {
 
   return (
     <>
-      <ManagerDashboard />
+      <Dashboard />
       <div className="resource-list">
       <center>   <h4>Course enquiry Details</h4> </center>
      

@@ -1,5 +1,5 @@
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
-// import Dashboard from '../../Components/Dashboard/Dashboard';
+
+import Dashboard from '../../Components/Dashboard/Dashboard';
 import axios from 'axios';
 import { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom"
@@ -36,7 +36,7 @@ useEffect(() => {
 
   return (
     <>
-        <ManagerDashboard />
+        <Dashboard />
         <div className="mainBody">
             <h4>
                 Resource enquiries List

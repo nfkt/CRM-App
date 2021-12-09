@@ -1,4 +1,4 @@
-import ManagerDashboard from "../../Components/ManagerDashboard/ManagerDashboard";
+import Dashboard from "../../Components/Dashboard/Dashboard";
 // import Tables from "./Table/Table";
 import VisitTable from "./Table/TableAxios";
 import {Button} from "react-bootstrap";
@@ -12,7 +12,7 @@ function SitesVisitsTableView() {
   }
   return (
     <div>
-      <ManagerDashboard />
+      <Dashboard />
       {/* <p>This is page for Table...</p> */}
       {/* <Tables /> */}
       <VisitTable />
