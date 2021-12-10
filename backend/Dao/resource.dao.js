@@ -2,7 +2,7 @@
 //defining the operations
 
 
-const Resource= require('../Models/resource');
+const Resource= require('../models/resource');
 
 var resourceDao = {
     findAll: findAll,

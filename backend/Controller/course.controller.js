@@ -1,4 +1,4 @@
-const courseDao = require('../Dao/course.dao');
+const courseDao = require('../dao/course.dao');
 
 
 var courseController = {
@@ -12,6 +12,8 @@ var courseController = {
 async function addCourse(req, res) {
     let course = req.body;
     let coursecode = req.body.coursecode
+
+    //To verify course code is unique
     courseDao.checkCourseCode(coursecode).then((isUnique) => {
         if (isUnique) {
             courseDao.create(course).

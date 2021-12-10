@@ -1,4 +1,4 @@
-const resourceEnquiryDao = require('../Dao/resourceenquiry.dao');
+const resourceEnquiryDao = require('../dao/resourceenquiry.dao');
 
 
 var resourceEnquiryController = {

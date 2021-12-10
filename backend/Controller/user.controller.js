@@ -1,8 +1,8 @@
-const userDao = require('../Dao/user.dao');
+const userDao = require('../dao/user.dao');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const SECRET_KEY = require('../Token/Token');
+const SECRET_KEY = require('../token/token');
 // 
 
 var userController = {

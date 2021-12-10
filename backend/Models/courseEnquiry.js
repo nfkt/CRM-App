@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize');
 const db = require('../Config/database');
-const Course = require('./course')
+const Course = require('./course');
+const User = require('./users');
 
 const CourseEnquiry = db.define('CourseEnquiry', {
     id: {
@@ -50,6 +51,6 @@ const CourseEnquiry = db.define('CourseEnquiry', {
     initialAutoIncrement: 2000
 });
 
-// Course.hasMany(CourseEnquiry);
-
+Course.hasMany(CourseEnquiry);
+User.hasMany(CourseEnquiry);
 module.exports = CourseEnquiry;

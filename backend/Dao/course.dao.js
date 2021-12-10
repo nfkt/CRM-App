@@ -1,4 +1,4 @@
-const Course = require('../Models/course');
+const Course = require('../models/course');
 var courseDao = {
     findAll: findAll,
     create: create,

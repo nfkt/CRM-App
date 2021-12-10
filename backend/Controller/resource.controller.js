@@ -1,4 +1,4 @@
-const resourceDao = require('../Dao/resource.dao');
+const resourceDao = require('../dao/resource.dao');
 var resourceController = {
         addResource: addResource,
         findResources: findResources,

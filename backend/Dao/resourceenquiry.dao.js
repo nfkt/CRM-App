@@ -1,4 +1,4 @@
-const ResourceEnquiry = require('../Models/resourceEnquiry');
+const ResourceEnquiry = require('../models/resourceEnquiry');
 
 var resourceEnquiryDao = {
     findAll: findAll,

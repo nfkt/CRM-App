@@ -1,4 +1,4 @@
-const courseEnquiryDao = require('../Dao/courseenquiry.dao');
+const courseEnquiryDao = require('../dao/courseenquiry.dao');
 
 
 var courseEnquiryController = {

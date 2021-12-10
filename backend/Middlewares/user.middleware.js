@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 
-const SECRET_KEY = require('../Token/Token');
+const SECRET_KEY = require('../token/token');
 
 const tokenAuth = {
     adminAuthenticate: authenticateToken,
@@ -34,7 +34,7 @@ function authenticateTokenManagerAdmin(req, res, next) {
         console.log(user);
         if (req.user.role === "Admin" || "Manager")
             next();
-        else { console.log("Not admin"); return res.status(403).send("Not admin"); }
+        else { console.log("Not authorized, have to be admin or manager to authorize this endpoint"); return res.status(403).send("Not admin"); }
     })
 }
 

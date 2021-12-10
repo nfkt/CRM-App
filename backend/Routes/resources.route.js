@@ -1,6 +1,6 @@
 const express = require('express');
-const resourceController = require('../Controller/resource.controller');
-const tokenAuth = require('../Middlewares/user.middleware');
+const resourceController = require('../controller/resource.controller');
+const tokenAuth = require('../middlewares/user.middleware');
 const router = express.Router();
 
 

@@ -1,4 +1,4 @@
-const Users = require('../Models/users');
+const Users = require('../models/users');
 var userDao = {
     findAll: findAll,
     create: create,

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const courseController = require('../Controller/course.controller');
-const tokenAuth = require('../Middlewares/user.middleware');
+const courseController = require('../controller/course.controller');
+const tokenAuth = require('../middlewares/user.middleware');
 
 //Course
 router.post('/', tokenAuth.adminAuthenticate, courseController.addCourse);

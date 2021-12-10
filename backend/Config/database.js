@@ -1,4 +1,4 @@
-const { Sequelize } = require("sequelize");
+const loaders = require('../loaders/index')
 
 const dbConfig = {
   host: process.env.DB_HOST,
@@ -19,7 +19,7 @@ if (dbConfig.dialect === "mysql") {
   dbConfig.operatorAliases = false;
 }
 
-const db = new Sequelize(
+const db = new loaders.sequelize(
   process.env.DB_SCHEMA,
   process.env.DB_USER,
   process.env.DB_PASSWORD,

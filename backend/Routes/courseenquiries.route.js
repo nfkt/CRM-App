@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const courseEnquiryController = require('../Controller/courseenquiry.controller');
+const courseEnquiryController = require('../controller/courseenquiry.controller');
 
-const tokenAuth = require('../Middlewares/user.middleware');
+const tokenAuth = require('../middlewares/user.middleware');
 
 //CourseEnquiry
 router.post('/', courseEnquiryController.addCourseEnquiry);

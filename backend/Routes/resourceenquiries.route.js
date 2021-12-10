@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const resourceEnquiryController = require('../Controller/resourceenquiry.controller');
-const tokenAuth = require('../Middlewares/user.middleware');
+const resourceEnquiryController = require('../controller/resourceenquiry.controller');
+const tokenAuth = require('../middlewares/user.middleware');
 
 //ResourceEnquiry
 router.post('/',  resourceEnquiryController.addResourceEnquiry);
