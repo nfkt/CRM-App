@@ -12,6 +12,7 @@ function Header() {
   const role = localStorage.getItem('role');
   const token = localStorage.getItem('mytoken');
   const username = localStorage.getItem('username');
+  const id = localStorage.getItem('id');
 
 
   return (
@@ -70,6 +71,12 @@ function Header() {
                 </Link>
               )}
 
+              {role === ('User') && (
+                <Link className="navItem" to={`/user/view-courses/cart/${id}`} >
+                  Cart
+                </Link>
+              )}
+
               {role !== ('Admin' || 'Manager') &&
                 <NavDropdown title="Enquiry" id="basic-nav-dropdown">
 
@@ -90,11 +97,12 @@ function Header() {
                   </NavDropdown.Item>}
                 </NavDropdown>
               }
+
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+    </div >
   );
 }
 

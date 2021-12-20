@@ -65,9 +65,15 @@ import ViewResourceList from "../pages/ResourceManagement/ViewResource/ViewResou
 import UserCourseEnquiryForm from "../pages/User/UserCourseEnquiryForm";
 import UserResourceEnquiryForm from "../pages/User/UserResourceEnquiryForm";
 import UserContext from "../context/user-context";
+import CartContext from "../context/cart-context";
+
+//Cart page for user
+import Cart from "../pages/Cart/Cart";
 
 const Routers = () => {
   const userContext = useContext(UserContext);
+  const cartContext = useContext(CartContext);
+
   return (
     <Router>
       <Header />
@@ -111,6 +117,9 @@ const Routers = () => {
         />
 
         <Route path="/user/course-enquiry/" element={userContext.userDetails && <UserCourseEnquiryForm />} />
+
+        {/* Path for cart for user */}
+        <Route path="/user/view-courses/cart/:id" element={userContext.userDetails && <Cart />} />
 
         {/* Admin Page */}
         <Route
